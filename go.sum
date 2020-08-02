@@ -1,0 +1,6 @@
+github.com/ferralucho/store_oauth-go v0.0.0-20200802181939-bdf62bbafdd8 h1:60d2gBJuuzMRA/cYlz37Nzww3GhrhQBWtaWrKNFdovU=
+github.com/ferralucho/store_oauth-go v0.0.0-20200802181939-bdf62bbafdd8/go.mod h1:iB1kx7AN3qjGLMImWJ03tLDfZBa81F9euQDJo92Ls+k=
+github.com/gorilla/mux v1.7.4 h1:VuZ8uybHlWmqV03+zRzdwKL4tUnIp1MAQtp1mIFE1bc=
+github.com/gorilla/mux v1.7.4/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/mercadolibre/golang-restclient v0.0.0-20170701022150-51958130a0a0 h1:EDOjA2IGgjSBlPlnW7CzBUo/o410SMiFh670jP29Kc4=
+github.com/mercadolibre/golang-restclient v0.0.0-20170701022150-51958130a0a0/go.mod h1:Z7qYja4aGk/RWl1yJtN1LXRvC7Hsbq8SEbqWWDrMqMs=
