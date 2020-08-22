@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ferralucho/store_items-api/utils/rest_errors"
+	"github.com/ferralucho/store_items-api/src/utils/rest_errors"
 	"github.com/gorilla/mux"
 
-	"github.com/ferralucho/store_items-api/domain/items"
-	"github.com/ferralucho/store_items-api/services"
-	"github.com/ferralucho/store_items-api/utils/http_utils"
+	"github.com/ferralucho/store_items-api/src/domain/items"
+	"github.com/ferralucho/store_items-api/src/services"
+	"github.com/ferralucho/store_items-api/src/utils/http_utils"
 	"github.com/ferralucho/store_oauth-go/oauth"
 )
 
