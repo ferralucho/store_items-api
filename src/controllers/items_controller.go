@@ -32,7 +32,7 @@ type itemsController struct {
 func (cont *itemsController) Create(w http.ResponseWriter, r *http.Request) {
 	if err := oauth.AuthenticateRequest(r); err != nil {
 		w.Header().Set("Content-Type", "application/json")
-		w.WriteHeader(err.Status())
+		w.WriteHeader(err.Status)
 		if a := json.NewEncoder(w).Encode(err); a != nil {
 			fmt.Println("Error json: " + a.Error())
 		}
