@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ferralucho/store_items-api/src/utils/rest_errors"
+	"github.com/ferralucho/store_utils-go/rest_errors"
 )
 
 func RespondJson(w http.ResponseWriter, statusCode int, body interface{}) {
@@ -14,5 +14,5 @@ func RespondJson(w http.ResponseWriter, statusCode int, body interface{}) {
 }
 
 func RespondError(w http.ResponseWriter, err rest_errors.RestErr) {
-	RespondJson(w, err.Status, err)
+	RespondJson(w, err.Status(), err)
 }
