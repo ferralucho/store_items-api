@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/ferralucho/store_items-api/domain/items"
-	"github.com/ferralucho/store_items-api/utils/rest_errors"
+	"github.com/ferralucho/store_items-api/src/domain/items"
+	"github.com/ferralucho/store_items-api/src/utils/rest_errors"
 )
 
 var (
