@@ -24,22 +24,15 @@ curl --location --request GET '127.0.0.1:9200/items'
 curl --location --request GET '127.0.0.1:9200/items/_search'
 You can use POST
 
-{
-    "took": 145,
-    "timed_out": false,
-    "_shards": {
-        "total": 4,
-        "successful": 4,
-        "skipped": 0,
-        "failed": 0
+//Save item
+curl --location --request POST 'localhost:8080/items' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "title": "Mac book pro",
+    "description": {
+        "plain_text": "Mac book pro"
     },
-    "hits": {
-        "total": {
-            "value": 0,
-            "relation": "eq"
-        },
-        "max_score": null,
-        "hits": []
-    }
-}
+    "status": "pending",
+    "available_quantity": 10
+}'
 
