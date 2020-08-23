@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/ferralucho/store_items-api/src/clients/elasticsearch"
 	"github.com/ferralucho/store_utils-go/logger"
 	"github.com/gorilla/mux"
 )
@@ -13,7 +14,7 @@ var (
 )
 
 func StartApplication() {
-
+	elasticsearch.Init()
 	mapUrls()
 
 	srv := &http.Server{
