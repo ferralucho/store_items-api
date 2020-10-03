@@ -20,7 +20,7 @@ curl --location --request PUT '127.0.0.1:9200/items' \
 //Get items index
 curl --location --request GET '127.0.0.1:9200/items'
 
-//Search items
+//Search items directly in elasticsearch
 curl --location --request GET '127.0.0.1:9200/items/_search'
 You can use POST
 
@@ -39,6 +39,7 @@ curl --location --request POST 'localhost:8080/items' \
 Example of the elastic custom query
 
 AnyEquals applies an or statement
+
 
 {
     "equals": [
@@ -62,3 +63,18 @@ AnyEquals applies an or statement
         }
     ]
 }
+
+curl --location --request GET 'localhost:8081/items/search' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+    "equals": [
+        {
+            "field": "seller",
+            "value": 1
+        },
+           {
+            "field": "status",
+            "value": "pending"
+        }
+    ]
+}'
