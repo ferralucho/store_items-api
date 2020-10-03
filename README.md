@@ -36,3 +36,29 @@ curl --location --request POST 'localhost:8080/items' \
     "available_quantity": 10
 }'
 
+Example of the elastic custom query
+
+AnyEquals applies an or statement
+
+{
+    "equals": [
+        {
+            "field": "status",
+            "value": "pending"
+        },
+        {
+            "field": "seller",
+            "value": "1"
+        }
+    ],
+    "any_equals": [
+        {
+            "field": "status",
+            "value": "pending"
+        },
+        {
+            "field": "seller",
+            "value": "1"
+        }
+    ]
+}
