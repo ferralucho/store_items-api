@@ -1,5 +1,5 @@
 # store_items-api
-itemms api for store in golang
+items api for store in golang
 
 use sqlmock to mock the sql driver
 use https://github.com/olivere/elastic/wiki
