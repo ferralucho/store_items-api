@@ -6,12 +6,6 @@ use https://github.com/olivere/elastic/wiki
 
 run elasticsearch in the cmd.
 
-##### To build docker image
-docker build -t items-api .
-
-##### To run docker image (host ports, elastic search ports, and the container name)
-docker run -p 8081:8081 -p 9200:9200 items-api:latest
-
 ###### create items index 
 curl --location --request PUT '127.0.0.1:9200/items' \
 --header 'Content-Type: application/json' \
