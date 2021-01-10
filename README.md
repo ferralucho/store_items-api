@@ -39,28 +39,28 @@ You can use POST
 
 ###### AnyEquals applies an or statement
 
-{
-    "equals": [
         {
-            "field": "status",
-            "value": "pending"
-        },
-        {
-            "field": "seller",
-            "value": "1"
+            "equals": [
+                {
+                    "field": "status",
+                    "value": "pending"
+                },
+                {
+                    "field": "seller",
+                    "value": "1"
+                }
+            ],
+            "any_equals": [
+                {
+                    "field": "status",
+                    "value": "pending"
+                },
+                {
+                    "field": "seller",
+                    "value": "1"
+                }
+            ]
         }
-    ],
-    "any_equals": [
-        {
-            "field": "status",
-            "value": "pending"
-        },
-        {
-            "field": "seller",
-            "value": "1"
-        }
-    ]
-}
 
 ###### items search
         curl --location --request GET 'localhost:8081/items/search' \
